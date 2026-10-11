@@ -1,0 +1,33 @@
+# macOS and local sync files
+.DS_Store
+.nosync
+*.nosync/
+
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.p12
+*.pfx
+*.key
+*credentials*
+*secrets*
+
+# Private local data
+*.sqlite
+*.sqlite3
+*.db
+*.db-journal
+
+# Dependencies, caches, and build output
+node_modules/
+vendor/
+.venv/
+venv/
+__pycache__/
+.cache/
+dist/
+build/
+.next/
+coverage/
