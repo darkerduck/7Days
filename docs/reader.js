@@ -2,12 +2,28 @@ const total = 30;
 const $ = (id) => document.getElementById(id);
 const language = new URL(location.href).searchParams.get('lang') === 'en' ? 'en' : 'zh';
 const ui = {
-  zh: { brand: '成神七日', subtitle: 'SEVEN DAYS TO GODHOOD', skip: '跳至漫畫', navigation: '閱讀選項', languages: '語言', jump: '跳至', pageJump: '選擇頁碼', progress: '閱讀進度', dialogue: '畫格中的對話', original: '原尺寸（含字）', fit: '適應螢幕', pan: '左右滑動查看原尺寸畫面與對話。', raw: '無字原圖', transcript: '展開本頁文字稿', transcriptArea: '本頁文字稿', pager: '翻頁', previous: '上一頁', next: '下一頁', imageMissing: '本頁畫面尚未完成，請稍後再閱讀。', loadFailed: '暫時無法載入漫畫', retry: '請稍後重試。', credit: '原作《成神七日》｜三十頁漫畫改編', help: '方向鍵可翻頁；可切換原尺寸含字版。' },
-  en: { brand: 'Seven Days to Godhood', subtitle: 'A COMIC IN THIRTY PAGES', skip: 'Skip to comic', navigation: 'Reading options', languages: 'Languages', jump: 'Go to', pageJump: 'Choose a page', progress: 'Reading progress', dialogue: 'Dialogue in the comic panels', original: 'Full size with dialogue', fit: 'Fit to screen', pan: 'Pan horizontally to read the full-size page and dialogue.', raw: 'Art without text', transcript: 'Open page transcript', transcriptArea: 'Page transcript', pager: 'Turn pages', previous: 'Previous', next: 'Next', imageMissing: 'This page is still being illustrated.', loadFailed: 'Unable to load the comic', retry: 'Please try again later.', credit: 'Based on Seven Days to Godhood · 30-page comic adaptation', help: 'Use arrow keys to turn pages. Full-size view includes dialogue.' }
+  zh: { brand: '成神七日', subtitle: 'SEVEN DAYS TO GODHOOD', skip: '跳至漫畫', navigation: '閱讀選項', languages: '語言', jump: '跳至', pageJump: '選擇頁碼', progress: '閱讀進度', dialogue: '畫格中的對話', original: '原尺寸（含字）', fit: '適應螢幕', pan: '左右滑動查看原尺寸畫面與對話。', raw: '無字原圖', transcript: '展開本頁文字稿', transcriptArea: '本頁文字稿', pager: '翻頁', previous: '上一頁', next: '下一頁', imageLoading: '正在載入第 {page} 頁…', imageMissing: '本頁畫面尚未完成，請稍後再閱讀。', loadFailed: '暫時無法載入漫畫', retry: '請稍後重試。', credit: '原作《成神七日》｜三十頁漫畫改編', help: '方向鍵可翻頁；可切換原尺寸含字版。' },
+  en: { brand: 'Seven Days to Godhood', subtitle: 'A COMIC IN THIRTY PAGES', skip: 'Skip to comic', navigation: 'Reading options', languages: 'Languages', jump: 'Go to', pageJump: 'Choose a page', progress: 'Reading progress', dialogue: 'Dialogue in the comic panels', original: 'Full size with dialogue', fit: 'Fit to screen', pan: 'Pan horizontally to read the full-size page and dialogue.', raw: 'Art without text', transcript: 'Open page transcript', transcriptArea: 'Page transcript', pager: 'Turn pages', previous: 'Previous', next: 'Next', imageLoading: 'Loading page {page}…', imageMissing: 'This page is still being illustrated.', loadFailed: 'Unable to load the comic', retry: 'Please try again later.', credit: 'Based on Seven Days to Godhood · 30-page comic adaptation', help: 'Use arrow keys to turn pages. Full-size view includes dialogue.' }
 }[language];
 let pages = [];
 let layouts = [];
 let current = 1;
+let imageRequest = 0;
+const prefetched = new Map();
+
+function pageImagePath(pageNumber) {
+  return `pages/${String(pageNumber).padStart(2, '0')}.png`;
+}
+
+function prefetchNext(pageNumber) {
+  const next = pageNumber + 1;
+  if (next > total || prefetched.has(next)) return;
+  const image = new Image();
+  image.decoding = 'async';
+  image.src = pageImagePath(next);
+  prefetched.clear();
+  prefetched.set(next, image);
+}
 
 function pageFromURL() {
   const value = Number(new URL(location.href).searchParams.get('page'));
@@ -32,18 +48,31 @@ function render(pageNumber, moveFocus = false) {
   $('progress-fill').style.width = `${(current / total) * 100}%`;
 
   const image = $('page-image');
-  const src = `pages/${String(current).padStart(2, '0')}.png`;
+  const src = pageImagePath(current);
+  const expectedSrc = new URL(src, document.baseURI).href;
+  const request = ++imageRequest;
   const frame = $('art-frame');
   frame.classList.remove('missing');
-  $('image-status').textContent = '';
+  frame.classList.add('loading');
+  frame.setAttribute('aria-busy', 'true');
+  const loadingMessage = ui.imageLoading.replace('{page}', String(current));
+  frame.dataset.loadingMessage = loadingMessage;
+  $('image-status').textContent = loadingMessage;
   image.alt = language === 'en'
     ? `Page ${current}: ${page.title}. ${page.scene}`
     : `第 ${current} 頁：${page.title}。${page.scene}`;
   image.onload = () => {
+    if (request !== imageRequest || image.currentSrc !== expectedSrc || !image.complete || !image.naturalWidth) return;
+    frame.classList.remove('loading');
+    frame.setAttribute('aria-busy', 'false');
     $('image-status').textContent = '';
     frame.style.setProperty('--natural-width', `${image.naturalWidth}px`);
+    prefetchNext(current);
   };
   image.onerror = () => {
+    if (request !== imageRequest || image.getAttribute('src') !== src || !image.complete || image.naturalWidth) return;
+    frame.classList.remove('loading');
+    frame.setAttribute('aria-busy', 'false');
     frame.classList.add('missing');
     $('image-status').textContent = ui.imageMissing;
   };

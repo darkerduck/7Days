@@ -47,6 +47,12 @@ body:not(.original-size) .fit-top, body:not(.original-size) .zoom-hint { display
 .artwork { margin: 0; background: #050910; }
 .art-frame { position: relative; width: 100%; background: #050910; }
 .art-frame img { display: block; width: 100%; height: auto; object-fit: contain; }
+.art-frame.loading { aspect-ratio: 2 / 3; }
+.art-frame.loading img, .art-frame.loading .balloon-layer { visibility: hidden; }
+.art-frame.loading::after {
+  content: attr(data-loading-message); position: absolute; inset: 0; display: grid; place-items: center;
+  padding: 1rem; color: var(--muted); text-align: center; font-weight: 700;
+}
 .art-frame.missing { min-height: 16rem; }
 .art-frame.missing .balloon-layer { display: none; }
 .balloon-layer { position: absolute; inset: 0; pointer-events: none; }
