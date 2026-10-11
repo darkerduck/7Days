@@ -1,0 +1,548 @@
+[
+  {
+    "page": 1,
+    "panel_count": 3,
+    "reviewed": true,
+    "balloons": [
+      {
+        "x": 52,
+        "y": 3,
+        "w": 44,
+        "panel": 1
+      },
+      {
+        "x": 59,
+        "y": 73,
+        "w": 36,
+        "panel": 3
+      }
+    ]
+  },
+  {
+    "page": 2,
+    "panel_count": 4,
+    "reviewed": true,
+    "balloons": [
+      {
+        "x": 53,
+        "y": 24,
+        "w": 43,
+        "panel": 2
+      },
+      {
+        "x": 56,
+        "y": 48,
+        "w": 40,
+        "panel": 3
+      }
+    ]
+  },
+  {
+    "page": 3,
+    "panel_count": 3,
+    "reviewed": true,
+    "balloons": [
+      {
+        "x": 59,
+        "y": 3,
+        "w": 37,
+        "panel": 1
+      },
+      {
+        "x": 55,
+        "y": 44,
+        "w": 24,
+        "panel": 2
+      },
+      {
+        "x": 5,
+        "y": 54,
+        "w": 52,
+        "panel": 3
+      }
+    ]
+  },
+  {
+    "page": 4,
+    "panel_count": 2,
+    "reviewed": false,
+    "balloons": [
+      {
+        "panel": 1,
+        "x": 5,
+        "y": 3.0,
+        "w": 49
+      },
+      {
+        "panel": 2,
+        "x": 55,
+        "y": 53.0,
+        "w": 42
+      }
+    ]
+  },
+  {
+    "page": 5,
+    "panel_count": 3,
+    "reviewed": false,
+    "balloons": [
+      {
+        "panel": 1,
+        "x": 5,
+        "y": 3.0,
+        "w": 49
+      },
+      {
+        "panel": 3,
+        "x": 55,
+        "y": 69.7,
+        "w": 42
+      }
+    ]
+  },
+  {
+    "page": 6,
+    "panel_count": 4,
+    "reviewed": false,
+    "balloons": [
+      {
+        "panel": 1,
+        "x": 5,
+        "y": 3.0,
+        "w": 49
+      },
+      {
+        "panel": 4,
+        "x": 55,
+        "y": 78.0,
+        "w": 42
+      }
+    ]
+  },
+  {
+    "page": 7,
+    "panel_count": 3,
+    "reviewed": false,
+    "balloons": [
+      {
+        "panel": 1,
+        "x": 5,
+        "y": 3.0,
+        "w": 49
+      },
+      {
+        "panel": 3,
+        "x": 55,
+        "y": 69.7,
+        "w": 42
+      }
+    ]
+  },
+  {
+    "page": 8,
+    "panel_count": 2,
+    "reviewed": false,
+    "balloons": [
+      {
+        "panel": 1,
+        "x": 5,
+        "y": 3.0,
+        "w": 49
+      },
+      {
+        "panel": 2,
+        "x": 55,
+        "y": 53.0,
+        "w": 42
+      }
+    ]
+  },
+  {
+    "page": 9,
+    "panel_count": 3,
+    "reviewed": false,
+    "balloons": [
+      {
+        "panel": 1,
+        "x": 5,
+        "y": 3.0,
+        "w": 49
+      }
+    ]
+  },
+  {
+    "page": 10,
+    "panel_count": 3,
+    "reviewed": false,
+    "balloons": [
+      {
+        "panel": 1,
+        "x": 5,
+        "y": 3.0,
+        "w": 49
+      },
+      {
+        "panel": 3,
+        "x": 55,
+        "y": 69.7,
+        "w": 42
+      }
+    ]
+  },
+  {
+    "page": 11,
+    "panel_count": 3,
+    "reviewed": true,
+    "balloons": [
+      {
+        "x": 55,
+        "y": 3,
+        "w": 41,
+        "panel": 1
+      },
+      {
+        "x": 54,
+        "y": 69,
+        "w": 42,
+        "panel": 3
+      }
+    ]
+  },
+  {
+    "page": 12,
+    "panel_count": 3,
+    "reviewed": true,
+    "balloons": [
+      {
+        "x": 55,
+        "y": 3,
+        "w": 41,
+        "panel": 1
+      },
+      {
+        "x": 59,
+        "y": 39,
+        "w": 37,
+        "panel": 2
+      }
+    ]
+  },
+  {
+    "page": 13,
+    "panel_count": 2,
+    "reviewed": false,
+    "balloons": [
+      {
+        "panel": 1,
+        "x": 5,
+        "y": 3.0,
+        "w": 49
+      }
+    ]
+  },
+  {
+    "page": 14,
+    "panel_count": 3,
+    "reviewed": false,
+    "balloons": [
+      {
+        "panel": 1,
+        "x": 5,
+        "y": 3.0,
+        "w": 49
+      },
+      {
+        "panel": 3,
+        "x": 55,
+        "y": 69.7,
+        "w": 42
+      }
+    ]
+  },
+  {
+    "page": 15,
+    "panel_count": 3,
+    "reviewed": false,
+    "balloons": [
+      {
+        "panel": 1,
+        "x": 5,
+        "y": 3.0,
+        "w": 49
+      },
+      {
+        "panel": 3,
+        "x": 55,
+        "y": 69.7,
+        "w": 42
+      }
+    ]
+  },
+  {
+    "page": 16,
+    "panel_count": 3,
+    "reviewed": false,
+    "balloons": [
+      {
+        "panel": 1,
+        "x": 5,
+        "y": 3.0,
+        "w": 49
+      },
+      {
+        "panel": 3,
+        "x": 55,
+        "y": 69.7,
+        "w": 42
+      }
+    ]
+  },
+  {
+    "page": 17,
+    "panel_count": 2,
+    "reviewed": false,
+    "balloons": [
+      {
+        "panel": 1,
+        "x": 5,
+        "y": 3.0,
+        "w": 49
+      },
+      {
+        "panel": 2,
+        "x": 55,
+        "y": 53.0,
+        "w": 42
+      }
+    ]
+  },
+  {
+    "page": 18,
+    "panel_count": 3,
+    "reviewed": false,
+    "balloons": [
+      {
+        "panel": 1,
+        "x": 5,
+        "y": 3.0,
+        "w": 49
+      }
+    ]
+  },
+  {
+    "page": 19,
+    "panel_count": 3,
+    "reviewed": false,
+    "balloons": [
+      {
+        "panel": 1,
+        "x": 5,
+        "y": 3.0,
+        "w": 49
+      },
+      {
+        "panel": 3,
+        "x": 55,
+        "y": 69.7,
+        "w": 42
+      }
+    ]
+  },
+  {
+    "page": 20,
+    "panel_count": 3,
+    "reviewed": false,
+    "balloons": [
+      {
+        "panel": 1,
+        "x": 5,
+        "y": 3.0,
+        "w": 49
+      },
+      {
+        "panel": 3,
+        "x": 55,
+        "y": 69.7,
+        "w": 42
+      }
+    ]
+  },
+  {
+    "page": 21,
+    "panel_count": 3,
+    "reviewed": true,
+    "balloons": [
+      {
+        "x": 60,
+        "y": 62,
+        "w": 36,
+        "panel": 3
+      }
+    ]
+  },
+  {
+    "page": 22,
+    "panel_count": 3,
+    "reviewed": false,
+    "balloons": [
+      {
+        "panel": 1,
+        "x": 5,
+        "y": 3.0,
+        "w": 49
+      },
+      {
+        "panel": 3,
+        "x": 55,
+        "y": 69.7,
+        "w": 42
+      }
+    ]
+  },
+  {
+    "page": 23,
+    "panel_count": 2,
+    "reviewed": false,
+    "balloons": [
+      {
+        "panel": 1,
+        "x": 5,
+        "y": 3.0,
+        "w": 49
+      }
+    ]
+  },
+  {
+    "page": 24,
+    "panel_count": 1,
+    "reviewed": false,
+    "balloons": [
+      {
+        "panel": 1,
+        "x": 5,
+        "y": 4,
+        "w": 49
+      },
+      {
+        "panel": 1,
+        "x": 55,
+        "y": 76,
+        "w": 42
+      }
+    ]
+  },
+  {
+    "page": 25,
+    "panel_count": 3,
+    "reviewed": false,
+    "balloons": [
+      {
+        "panel": 1,
+        "x": 5,
+        "y": 3.0,
+        "w": 49
+      },
+      {
+        "panel": 3,
+        "x": 55,
+        "y": 69.7,
+        "w": 42
+      }
+    ]
+  },
+  {
+    "page": 26,
+    "panel_count": 2,
+    "reviewed": false,
+    "balloons": [
+      {
+        "panel": 1,
+        "x": 5,
+        "y": 3.0,
+        "w": 49
+      },
+      {
+        "panel": 2,
+        "x": 55,
+        "y": 53.0,
+        "w": 42
+      }
+    ]
+  },
+  {
+    "page": 27,
+    "panel_count": 2,
+    "reviewed": false,
+    "balloons": [
+      {
+        "panel": 1,
+        "x": 5,
+        "y": 3.0,
+        "w": 49
+      },
+      {
+        "panel": 2,
+        "x": 55,
+        "y": 53.0,
+        "w": 42
+      }
+    ]
+  },
+  {
+    "page": 28,
+    "panel_count": 3,
+    "reviewed": false,
+    "balloons": [
+      {
+        "panel": 1,
+        "x": 5,
+        "y": 3.0,
+        "w": 49
+      },
+      {
+        "panel": 3,
+        "x": 55,
+        "y": 69.7,
+        "w": 42
+      }
+    ]
+  },
+  {
+    "page": 29,
+    "panel_count": 3,
+    "reviewed": false,
+    "balloons": [
+      {
+        "panel": 1,
+        "x": 5,
+        "y": 3.0,
+        "w": 49
+      },
+      {
+        "panel": 3,
+        "x": 55,
+        "y": 69.7,
+        "w": 42
+      }
+    ]
+  },
+  {
+    "page": 30,
+    "panel_count": 2,
+    "reviewed": false,
+    "balloons": [
+      {
+        "panel": 1,
+        "x": 5,
+        "y": 3.0,
+        "w": 49
+      },
+      {
+        "panel": 2,
+        "x": 55,
+        "y": 53.0,
+        "w": 42
+      }
+    ]
+  }
+]
