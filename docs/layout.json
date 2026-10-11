@@ -103,11 +103,11 @@
   {
     "page": 6,
     "panel_count": 4,
-    "reviewed": false,
+    "reviewed": true,
     "balloons": [
       {
         "panel": 1,
-        "x": 5,
+        "x": 55,
         "y": 3.0,
         "w": 41
       },
@@ -121,8 +121,8 @@
   },
   {
     "page": 7,
-    "panel_count": 3,
-    "reviewed": false,
+    "panel_count": 4,
+    "reviewed": true,
     "balloons": [
       {
         "panel": 1,
@@ -131,7 +131,7 @@
         "w": 41
       },
       {
-        "panel": 3,
+        "panel": 4,
         "x": 55,
         "y": 69.7,
         "w": 41
@@ -140,40 +140,8 @@
   },
   {
     "page": 8,
-    "panel_count": 2,
-    "reviewed": false,
-    "balloons": [
-      {
-        "panel": 1,
-        "x": 5,
-        "y": 3.0,
-        "w": 41
-      },
-      {
-        "panel": 2,
-        "x": 55,
-        "y": 53.0,
-        "w": 41
-      }
-    ]
-  },
-  {
-    "page": 9,
     "panel_count": 3,
-    "reviewed": false,
-    "balloons": [
-      {
-        "panel": 1,
-        "x": 5,
-        "y": 3.0,
-        "w": 53
-      }
-    ]
-  },
-  {
-    "page": 10,
-    "panel_count": 3,
-    "reviewed": false,
+    "reviewed": true,
     "balloons": [
       {
         "panel": 1,
@@ -184,7 +152,39 @@
       {
         "panel": 3,
         "x": 55,
-        "y": 69.7,
+        "y": 74,
+        "w": 41
+      }
+    ]
+  },
+  {
+    "page": 9,
+    "panel_count": 3,
+    "reviewed": true,
+    "balloons": [
+      {
+        "panel": 3,
+        "x": 55,
+        "y": 70,
+        "w": 41
+      }
+    ]
+  },
+  {
+    "page": 10,
+    "panel_count": 4,
+    "reviewed": true,
+    "balloons": [
+      {
+        "panel": 1,
+        "x": 5,
+        "y": 3.0,
+        "w": 41
+      },
+      {
+        "panel": 4,
+        "x": 55,
+        "y": 76,
         "w": 41
       }
     ]
@@ -262,30 +262,30 @@
   {
     "page": 15,
     "panel_count": 3,
-    "reviewed": false,
+    "reviewed": true,
     "balloons": [
       {
         "panel": 1,
-        "x": 5,
-        "y": 3.0,
-        "w": 41
+        "x": 62,
+        "y": 3,
+        "w": 34
       },
       {
         "panel": 3,
-        "x": 55,
-        "y": 69.7,
-        "w": 41
+        "x": 5,
+        "y": 70,
+        "w": 45
       }
     ]
   },
   {
     "page": 16,
     "panel_count": 3,
-    "reviewed": false,
+    "reviewed": true,
     "balloons": [
       {
         "panel": 1,
-        "x": 5,
+        "x": 55,
         "y": 3.0,
         "w": 41
       },
@@ -299,8 +299,8 @@
   },
   {
     "page": 17,
-    "panel_count": 2,
-    "reviewed": false,
+    "panel_count": 3,
+    "reviewed": true,
     "balloons": [
       {
         "panel": 1,
@@ -311,7 +311,7 @@
       {
         "panel": 2,
         "x": 55,
-        "y": 53.0,
+        "y": 47,
         "w": 41
       }
     ]
@@ -319,7 +319,7 @@
   {
     "page": 18,
     "panel_count": 3,
-    "reviewed": false,
+    "reviewed": true,
     "balloons": [
       {
         "panel": 1,
@@ -332,12 +332,12 @@
   {
     "page": 19,
     "panel_count": 3,
-    "reviewed": false,
+    "reviewed": true,
     "balloons": [
       {
         "panel": 1,
-        "x": 5,
-        "y": 3.0,
+        "x": 55,
+        "y": 3,
         "w": 41
       },
       {
@@ -351,13 +351,13 @@
   {
     "page": 20,
     "panel_count": 3,
-    "reviewed": false,
+    "reviewed": true,
     "balloons": [
       {
         "panel": 1,
-        "x": 5,
-        "y": 3.0,
-        "w": 41
+        "x": 57,
+        "y": 3,
+        "w": 38
       },
       {
         "panel": 3,
@@ -415,7 +415,7 @@
   {
     "page": 24,
     "panel_count": 1,
-    "reviewed": false,
+    "reviewed": true,
     "balloons": [
       {
         "panel": 1,
@@ -434,7 +434,26 @@
   {
     "page": 25,
     "panel_count": 3,
-    "reviewed": false,
+    "reviewed": true,
+    "balloons": [
+      {
+        "panel": 1,
+        "x": 5,
+        "y": 3.0,
+        "w": 41
+      },
+      {
+        "panel": 3,
+        "x": 5,
+        "y": 70,
+        "w": 46
+      }
+    ]
+  },
+  {
+    "page": 26,
+    "panel_count": 3,
+    "reviewed": true,
     "balloons": [
       {
         "panel": 1,
@@ -445,59 +464,40 @@
       {
         "panel": 3,
         "x": 55,
-        "y": 69.7,
-        "w": 41
-      }
-    ]
-  },
-  {
-    "page": 26,
-    "panel_count": 2,
-    "reviewed": false,
-    "balloons": [
-      {
-        "panel": 1,
-        "x": 5,
-        "y": 3.0,
-        "w": 41
-      },
-      {
-        "panel": 2,
-        "x": 55,
-        "y": 53.0,
+        "y": 70,
         "w": 41
       }
     ]
   },
   {
     "page": 27,
-    "panel_count": 2,
-    "reviewed": false,
+    "panel_count": 3,
+    "reviewed": true,
     "balloons": [
       {
         "panel": 1,
-        "x": 5,
-        "y": 3.0,
+        "x": 55,
+        "y": 3,
         "w": 41
       },
       {
-        "panel": 2,
-        "x": 55,
-        "y": 53.0,
-        "w": 41
+        "panel": 3,
+        "x": 57,
+        "y": 68,
+        "w": 40
       }
     ]
   },
   {
     "page": 28,
     "panel_count": 3,
-    "reviewed": false,
+    "reviewed": true,
     "balloons": [
       {
         "panel": 1,
-        "x": 5,
-        "y": 3.0,
-        "w": 41
+        "x": 60,
+        "y": 3,
+        "w": 35
       },
       {
         "panel": 3,
@@ -510,13 +510,13 @@
   {
     "page": 29,
     "panel_count": 3,
-    "reviewed": false,
+    "reviewed": true,
     "balloons": [
       {
         "panel": 1,
-        "x": 5,
-        "y": 3.0,
-        "w": 41
+        "x": 53,
+        "y": 3,
+        "w": 43
       },
       {
         "panel": 3,
@@ -528,8 +528,8 @@
   },
   {
     "page": 30,
-    "panel_count": 2,
-    "reviewed": false,
+    "panel_count": 4,
+    "reviewed": true,
     "balloons": [
       {
         "panel": 1,
@@ -538,10 +538,10 @@
         "w": 41
       },
       {
-        "panel": 2,
-        "x": 55,
-        "y": 53.0,
-        "w": 41
+        "panel": 4,
+        "x": 57,
+        "y": 69,
+        "w": 39
       }
     ]
   }

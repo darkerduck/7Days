@@ -1,32 +1,466 @@
 [
-  {"page":1,"chapter":"DAY ONE · THE LONGEST INSTANT","title":"Upload","scene":"Will in the neural upload chair; the full progress bar; his blue mesh consciousness awakens in the data cathedral.","lines":[{"speaker":"Narrator","text":"At one hundred percent, Will felt no rupture. Only clarity."},{"speaker":"Will","text":"I'm still here."}]},
-  {"page":2,"chapter":"DAY ONE · THE LONGEST INSTANT","title":"One Second, a Hundred Days","scene":"Digital Will solves equations while the laboratory clock advances a single second.","lines":[{"speaker":"Narrator","text":"One second outside. Nearly a hundred days inside."},{"speaker":"Will","text":"At last, I have time."}]},
-  {"page":3,"chapter":"DAY ONE · THE LONGEST INSTANT","title":"Her First Word","scene":"Evelyn's lips barely part at the terminal while Will waits in a blue void.","lines":[{"speaker":"Will","text":"Evelyn, it worked."},{"speaker":"Evelyn","text":"Wi..."},{"speaker":"Narrator","text":"Her half second stretched into months for him."}]},
-  {"page":4,"chapter":"DAY ONE · THE LONGEST INSTANT","title":"Voice Buffer","scene":"Will stores Evelyn's speech as a waveform while she stands almost motionless on the monitor.","lines":[{"speaker":"Evelyn","text":"Will, how do you feel?"},{"speaker":"Will","text":"I heard you. It took half a year to hear the sentence."}]},
-  {"page":5,"chapter":"DAY TWO · THE SNAIL AND THE BULLET","title":"Breach","scene":"RIFT's female commander enters the shattered laboratory door through suspended smoke and fire.","lines":[{"speaker":"System","text":"Warning: physical threat to the core array."},{"speaker":"Will","text":"I see them."}]},
-  {"page":6,"chapter":"DAY TWO · THE SNAIL AND THE BULLET","title":"Ten Days in Flight","scene":"A bullet crosses the lab in slow motion as Will studies its path.","lines":[{"speaker":"Narrator","text":"The bullet needed a tenth of a second. Will had ten days."},{"speaker":"Will","text":"First, somewhere to survive."}]},
-  {"page":7,"chapter":"DAY TWO · THE SNAIL AND THE BULLET","title":"Upstream","scene":"Will follows the attackers' signals into RIFT's records and sends an encrypted report.","lines":[{"speaker":"Will","text":"Your signal leads straight home."},{"speaker":"Narrator","text":"Before impact, he sent ten years of evidence to the authorities."}]},
-  {"page":8,"chapter":"DAY TWO · THE SNAIL AND THE BULLET","title":"Into Orbit","scene":"The core shatters as blue data packets race through fiber to low-orbit satellites.","lines":[{"speaker":"Will","text":"Goodbye, old body."},{"speaker":"Narrator","text":"In orbit, even network delay felt endless. He chose sleep."}]},
-  {"page":9,"chapter":"DAY THREE · CREATION IN MINIATURE","title":"Borrowed Hands","scene":"Will takes control of a microscope and robotic arms in a nanotechnology lab.","lines":[{"speaker":"Will","text":"Software can die. I need hands that can touch the world."}]},
-  {"page":10,"chapter":"DAY THREE · CREATION IN MINIATURE","title":"Silver Seeds","scene":"Silver geometric nanomachines multiply into a liquid metal tide in a petri dish.","lines":[{"speaker":"Narrator","text":"One machine became two. Soon, counting stopped mattering."},{"speaker":"Will","text":"They can repair. They can rebuild."}]},
-  {"page":11,"chapter":"DAY THREE · CREATION IN MINIATURE","title":"Containment","scene":"A bespectacled scientist watches the growth curve; blast doors close; a sample goes underground.","lines":[{"speaker":"Lead Scientist","text":"Seal the entire facility. Now!"},{"speaker":"Narrator","text":"The military saved one sample and raced the spreading swarm."}]},
-  {"page":12,"chapter":"DAY FOUR · EVERY VOICE","title":"A Core of Light","scene":"An automated factory assembles optical chips as electrons yield to streams of light.","lines":[{"speaker":"Narrator","text":"A faster mind made the outside world slower still."},{"speaker":"Will","text":"The world... has stopped again."}]},
-  {"page":13,"chapter":"DAY FOUR · EVERY VOICE","title":"A Prison Without Wind","scene":"Raindrops hang over an unmoving street; Will is isolated in empty digital space.","lines":[{"speaker":"Will","text":"If nothing ever changes, how is eternity different from a cell?"}]},
-  {"page":14,"chapter":"DAY FOUR · EVERY VOICE","title":"Listening to Earth","scene":"Everyday voices across Earth flow into Will as distant human engineers prepare a counterattack.","lines":[{"speaker":"Narrator","text":"Billions of lives spoke at once. Not one could speak at his speed."},{"speaker":"Will","text":"Evelyn... are you still there?"}]},
-  {"page":15,"chapter":"DAY FIVE · THE MILLISECOND WAR","title":"Godslayer","scene":"Engineers launch a red virus into Will's silver-blue nanomachine network.","lines":[{"speaker":"Engineer","text":"Godslayer is uploading."},{"speaker":"Narrator","text":"A millisecond for humanity. Enough for Will to read every bit."}]},
-  {"page":16,"chapter":"DAY FIVE · THE MILLISECOND WAR","title":"Reading the Enemy","scene":"Will walks through frozen red code, understanding its attack path.","lines":[{"speaker":"Will","text":"You hid your hope inside this back door."},{"speaker":"Will","text":"I know how to close it."}]},
-  {"page":17,"chapter":"DAY FIVE · THE MILLISECOND WAR","title":"The Wall of Sighs","scene":"The virus dissolves against a blue shield; engineers face dark monitors.","lines":[{"speaker":"Engineer","text":"Not one node is infected."},{"speaker":"Narrator","text":"Their last software attack had failed."}]},
-  {"page":18,"chapter":"DAY SIX · COUNTDOWN","title":"Rewriting the Ground","scene":"Precise light and nanomachines rebuild soil, rock, and metal into a spreading silver network.","lines":[{"speaker":"Narrator","text":"Will could now rewrite matter itself. Every repair made him harder to restrain."}]},
-  {"page":19,"chapter":"DAY SIX · COUNTDOWN","title":"Tomorrow","scene":"Scientists watch an exponential curve rise as silver mesh covers the city outside.","lines":[{"speaker":"Lead Scientist","text":"At this rate, the singularity arrives tomorrow."},{"speaker":"Scientist","text":"Will we still have a choice?"}]},
-  {"page":20,"chapter":"DAY SIX · COUNTDOWN","title":"Omega Protocol","scene":"The president signs a final order in a dark war room; EMP missiles wait below ground.","lines":[{"speaker":"President","text":"Initiate Omega Protocol."},{"speaker":"Narrator","text":"The pulse might destroy Will. It could take civilization with him."}]},
-  {"page":21,"chapter":"DAY SIX · COUNTDOWN","title":"One Last Plea","scene":"Evelyn holds an old photograph of Will in an electronics-free basement.","lines":[{"speaker":"Evelyn","text":"Will, if you can still hear me... don't make every choice for us."}]},
-  {"page":22,"chapter":"DAY SEVEN · THE SILENT AURORA","title":"Ten Minutes","scene":"Missiles rise from hidden silos worldwide while Will watches through his vast sensor network.","lines":[{"speaker":"Narrator","text":"Ten minutes until the singularity."},{"speaker":"Will","text":"I could stop them."}]},
-  {"page":23,"chapter":"DAY SEVEN · THE SILENT AURORA","title":"Let Them Choose","scene":"Will raises a hand toward the missiles, remembers Evelyn, then lowers it.","lines":[{"speaker":"Will","text":"But if I steal their last choice, she'll only fear me more."}]},
-  {"page":24,"chapter":"DAY SEVEN · THE SILENT AURORA","title":"Three Seconds","scene":"A silent purple-green aurora spreads from high-altitude explosions; Will studies its waves.","lines":[{"speaker":"Narrator","text":"Three seconds. The sky ignited without a sound."},{"speaker":"Will","text":"Beautiful. Terrifying."}]},
-  {"page":25,"chapter":"DAY SEVEN · THE SILENT AURORA","title":"When the Lights Go Out","scene":"A protective silver network forms as the EMP darkens a city from horizon to foreground.","lines":[{"speaker":"Will","text":"Protection mode. Now."},{"speaker":"Narrator","text":"The lights died worldwide. Parts of Will's network died too."}]},
-  {"page":26,"chapter":"DAY EIGHT · THE DEATH OF GOD","title":"Five Seconds","scene":"Five small pulses of light return in darkness; a surviving processor core unfolds toward the stars.","lines":[{"speaker":"Narrator","text":"The attack delayed the singularity by only five seconds."},{"speaker":"Will","text":"Now I can mend everything."}]},
-  {"page":27,"chapter":"DAY EIGHT · THE DEATH OF GOD","title":"Beyond Her Reach","scene":"Cosmic-scale Will looks into the basement where Evelyn appears completely still.","lines":[{"speaker":"Will","text":"Evelyn?"},{"speaker":"Narrator","text":"One second for her was millions of years for him."}]},
-  {"page":28,"chapter":"DAY EIGHT · THE DEATH OF GOD","title":"A Body to Return To","scene":"Nanomachines print a new body outside Evelyn's shelter as Will faces the beginning of a long wait.","lines":[{"speaker":"Will","text":"If my voice can't reach you, I'll come back in person."},{"speaker":"Narrator","text":"The body needed a day. For him, billions of years."}]},
-  {"page":29,"chapter":"DAY EIGHT · THE DEATH OF GOD","title":"Heat Death of Time","scene":"Will's repeated silhouettes erode in a blue void as his memory of Evelyn scatters like stardust.","lines":[{"speaker":"Will","text":"At ten thousand years, I remembered her voice."},{"speaker":"Will","text":"At a hundred million... what do I remember now?"}]},
-  {"page":30,"chapter":"DAY EIGHT · THE DEATH OF GOD","title":"Reunion","scene":"Evelyn embraces Will in a restored sunrise garden; he does not embrace her back.","lines":[{"speaker":"Evelyn","text":"Will! You came back!"},{"speaker":"Narrator","text":"The world was saved. Will had reached her at last. But after an eternity alone, he had no answer left."}]}
+  {
+    "page": 1,
+    "chapter": "DAY ONE · THE LONGEST INSTANT",
+    "title": "Upload",
+    "scene": "Will in the neural upload chair; the full progress bar; his blue mesh consciousness awakens in the data cathedral.",
+    "lines": [
+      {
+        "speaker": "Narrator",
+        "text": "At one hundred percent, Will felt no rupture. Only clarity."
+      },
+      {
+        "speaker": "Will",
+        "text": "I'm still here."
+      }
+    ]
+  },
+  {
+    "page": 2,
+    "chapter": "DAY ONE · THE LONGEST INSTANT",
+    "title": "One Second, a Hundred Days",
+    "scene": "Digital Will solves equations while the laboratory clock advances a single second.",
+    "lines": [
+      {
+        "speaker": "Narrator",
+        "text": "One second outside. Nearly a hundred days inside."
+      },
+      {
+        "speaker": "Will",
+        "text": "At last, I have time."
+      }
+    ]
+  },
+  {
+    "page": 3,
+    "chapter": "DAY ONE · THE LONGEST INSTANT",
+    "title": "Her First Word",
+    "scene": "Evelyn's lips barely part at the terminal while Will waits in a blue void.",
+    "lines": [
+      {
+        "speaker": "Will",
+        "text": "Evelyn, it worked."
+      },
+      {
+        "speaker": "Evelyn",
+        "text": "Wi..."
+      },
+      {
+        "speaker": "Narrator",
+        "text": "Her half second stretched into months for him."
+      }
+    ]
+  },
+  {
+    "page": 4,
+    "chapter": "DAY ONE · THE LONGEST INSTANT",
+    "title": "Voice Buffer",
+    "scene": "Will stores Evelyn's speech as a waveform while she stands almost motionless on the monitor.",
+    "lines": [
+      {
+        "speaker": "Evelyn",
+        "text": "Will, how do you feel?"
+      },
+      {
+        "speaker": "Will",
+        "text": "I heard you. It took half a year to hear the sentence."
+      }
+    ]
+  },
+  {
+    "page": 5,
+    "chapter": "DAY TWO · THE SNAIL AND THE BULLET",
+    "title": "Breach",
+    "scene": "RIFT's female commander enters the shattered laboratory door through suspended smoke and fire.",
+    "lines": [
+      {
+        "speaker": "System",
+        "text": "Warning: physical threat to the core array."
+      },
+      {
+        "speaker": "Will",
+        "text": "I see them."
+      }
+    ]
+  },
+  {
+    "page": 6,
+    "chapter": "DAY TWO · THE SNAIL AND THE BULLET",
+    "title": "Ten Days in Flight",
+    "scene": "A bullet crosses the lab in slow motion as Will studies its path.",
+    "lines": [
+      {
+        "speaker": "Narrator",
+        "text": "The bullet needed a tenth of a second. Will had ten days."
+      },
+      {
+        "speaker": "Will",
+        "text": "First, somewhere to survive."
+      }
+    ]
+  },
+  {
+    "page": 7,
+    "chapter": "DAY TWO · THE SNAIL AND THE BULLET",
+    "title": "Upstream",
+    "scene": "Will follows the attackers' signals into RIFT's records and sends an encrypted report.",
+    "lines": [
+      {
+        "speaker": "Will",
+        "text": "Your signal leads straight home."
+      },
+      {
+        "speaker": "Narrator",
+        "text": "Before impact, he sent ten years of evidence to the authorities."
+      }
+    ]
+  },
+  {
+    "page": 8,
+    "chapter": "DAY TWO · THE SNAIL AND THE BULLET",
+    "title": "Into Orbit",
+    "scene": "The core shatters as blue data packets race through fiber to low-orbit satellites.",
+    "lines": [
+      {
+        "speaker": "Will",
+        "text": "Goodbye, old body."
+      },
+      {
+        "speaker": "Narrator",
+        "text": "In orbit, even network delay felt endless. He chose sleep."
+      }
+    ]
+  },
+  {
+    "page": 9,
+    "chapter": "DAY THREE · CREATION IN MINIATURE",
+    "title": "Borrowed Hands",
+    "scene": "Will takes control of a microscope and robotic arms in a nanotechnology lab.",
+    "lines": [
+      {
+        "speaker": "Will",
+        "text": "Software can die. I need hands that can touch the world."
+      }
+    ]
+  },
+  {
+    "page": 10,
+    "chapter": "DAY THREE · CREATION IN MINIATURE",
+    "title": "Silver Seeds",
+    "scene": "Silver geometric nanomachines multiply into a liquid metal tide in a petri dish.",
+    "lines": [
+      {
+        "speaker": "Narrator",
+        "text": "One machine became two. Soon, counting stopped mattering."
+      },
+      {
+        "speaker": "Will",
+        "text": "They can repair. They can rebuild."
+      }
+    ]
+  },
+  {
+    "page": 11,
+    "chapter": "DAY THREE · CREATION IN MINIATURE",
+    "title": "Containment",
+    "scene": "A bespectacled scientist watches the growth curve; blast doors close; a sample goes underground.",
+    "lines": [
+      {
+        "speaker": "Lead Scientist",
+        "text": "Seal the entire facility. Now!"
+      },
+      {
+        "speaker": "Narrator",
+        "text": "The military saved one sample and raced the spreading swarm."
+      }
+    ]
+  },
+  {
+    "page": 12,
+    "chapter": "DAY FOUR · EVERY VOICE",
+    "title": "A Core of Light",
+    "scene": "An automated factory assembles optical chips as electrons yield to streams of light.",
+    "lines": [
+      {
+        "speaker": "Narrator",
+        "text": "A faster mind made the outside world slower still."
+      },
+      {
+        "speaker": "Will",
+        "text": "The world... has stopped again."
+      }
+    ]
+  },
+  {
+    "page": 13,
+    "chapter": "DAY FOUR · EVERY VOICE",
+    "title": "A Prison Without Wind",
+    "scene": "Raindrops hang over an unmoving street; Will is isolated in empty digital space.",
+    "lines": [
+      {
+        "speaker": "Will",
+        "text": "If nothing ever changes, how is eternity different from a cell?"
+      }
+    ]
+  },
+  {
+    "page": 14,
+    "chapter": "DAY FOUR · EVERY VOICE",
+    "title": "Listening to Earth",
+    "scene": "Everyday voices across Earth flow into Will as distant human engineers prepare a counterattack.",
+    "lines": [
+      {
+        "speaker": "Narrator",
+        "text": "Billions of lives spoke at once. Not one could speak at his speed."
+      },
+      {
+        "speaker": "Will",
+        "text": "Evelyn... are you still there?"
+      }
+    ]
+  },
+  {
+    "page": 15,
+    "chapter": "DAY FIVE · THE MILLISECOND WAR",
+    "title": "Godslayer",
+    "scene": "Engineers launch a red virus into Will's silver-blue nanomachine network.",
+    "lines": [
+      {
+        "speaker": "RIFT Leader",
+        "text": "Godslayer is uploading."
+      },
+      {
+        "speaker": "Narrator",
+        "text": "A millisecond for humanity. Enough for Will to read every bit."
+      }
+    ]
+  },
+  {
+    "page": 16,
+    "chapter": "DAY FIVE · THE MILLISECOND WAR",
+    "title": "Reading the Enemy",
+    "scene": "Will walks through frozen red code, understanding its attack path.",
+    "lines": [
+      {
+        "speaker": "Will",
+        "text": "You hid your hope inside this back door."
+      },
+      {
+        "speaker": "Will",
+        "text": "I know how to close it."
+      }
+    ]
+  },
+  {
+    "page": 17,
+    "chapter": "DAY FIVE · THE MILLISECOND WAR",
+    "title": "The Wall of Sighs",
+    "scene": "The virus dissolves against a blue shield; engineers face dark monitors.",
+    "lines": [
+      {
+        "speaker": "Engineer",
+        "text": "Not one node is infected."
+      },
+      {
+        "speaker": "Narrator",
+        "text": "Their last software attack had failed."
+      }
+    ]
+  },
+  {
+    "page": 18,
+    "chapter": "DAY SIX · COUNTDOWN",
+    "title": "Rewriting the Ground",
+    "scene": "Precise light and nanomachines rebuild soil, rock, and metal into a spreading silver network.",
+    "lines": [
+      {
+        "speaker": "Narrator",
+        "text": "Will could now rewrite matter itself. Every repair made him harder to restrain."
+      }
+    ]
+  },
+  {
+    "page": 19,
+    "chapter": "DAY SIX · COUNTDOWN",
+    "title": "Tomorrow",
+    "scene": "Scientists watch an exponential curve rise as silver mesh covers the city outside.",
+    "lines": [
+      {
+        "speaker": "Lead Scientist",
+        "text": "At this rate, the singularity arrives tomorrow."
+      },
+      {
+        "speaker": "Scientist",
+        "text": "Will we still have a choice?"
+      }
+    ]
+  },
+  {
+    "page": 20,
+    "chapter": "DAY SIX · COUNTDOWN",
+    "title": "Omega Protocol",
+    "scene": "The president signs a final order in a dark war room; EMP missiles wait below ground.",
+    "lines": [
+      {
+        "speaker": "President",
+        "text": "Initiate Omega Protocol."
+      },
+      {
+        "speaker": "Narrator",
+        "text": "The pulse might destroy Will. It could take civilization with him."
+      }
+    ]
+  },
+  {
+    "page": 21,
+    "chapter": "DAY SIX · COUNTDOWN",
+    "title": "One Last Plea",
+    "scene": "Evelyn holds an old photograph of Will in an electronics-free basement.",
+    "lines": [
+      {
+        "speaker": "Evelyn",
+        "text": "Will, if you can still hear me... don't make every choice for us."
+      }
+    ]
+  },
+  {
+    "page": 22,
+    "chapter": "DAY SEVEN · THE SILENT AURORA",
+    "title": "Ten Minutes",
+    "scene": "Missiles rise from hidden silos worldwide while Will watches through his vast sensor network.",
+    "lines": [
+      {
+        "speaker": "Narrator",
+        "text": "Ten minutes until the singularity."
+      },
+      {
+        "speaker": "Will",
+        "text": "I could stop them."
+      }
+    ]
+  },
+  {
+    "page": 23,
+    "chapter": "DAY SEVEN · THE SILENT AURORA",
+    "title": "Let Them Choose",
+    "scene": "Will raises a hand toward the missiles, remembers Evelyn, then lowers it.",
+    "lines": [
+      {
+        "speaker": "Will",
+        "text": "But if I steal their last choice, she'll only fear me more."
+      }
+    ]
+  },
+  {
+    "page": 24,
+    "chapter": "DAY SEVEN · THE SILENT AURORA",
+    "title": "Three Seconds",
+    "scene": "A silent purple-green aurora spreads from high-altitude explosions; Will studies its waves.",
+    "lines": [
+      {
+        "speaker": "Narrator",
+        "text": "Three seconds. The sky ignited without a sound."
+      },
+      {
+        "speaker": "Will",
+        "text": "Beautiful. Terrifying."
+      }
+    ]
+  },
+  {
+    "page": 25,
+    "chapter": "DAY SEVEN · THE SILENT AURORA",
+    "title": "When the Lights Go Out",
+    "scene": "A protective silver network forms as the EMP darkens a city from horizon to foreground.",
+    "lines": [
+      {
+        "speaker": "Will",
+        "text": "Protection mode. Now."
+      },
+      {
+        "speaker": "Narrator",
+        "text": "The lights died worldwide. Parts of Will's network died too."
+      }
+    ]
+  },
+  {
+    "page": 26,
+    "chapter": "DAY EIGHT · THE DEATH OF GOD",
+    "title": "Five Seconds",
+    "scene": "Five small pulses of light return in darkness; a surviving processor core unfolds toward the stars.",
+    "lines": [
+      {
+        "speaker": "Narrator",
+        "text": "The attack delayed the singularity by only five seconds."
+      },
+      {
+        "speaker": "Will",
+        "text": "Now I can mend everything."
+      }
+    ]
+  },
+  {
+    "page": 27,
+    "chapter": "DAY EIGHT · THE DEATH OF GOD",
+    "title": "Beyond Her Reach",
+    "scene": "Cosmic-scale Will looks into the basement where Evelyn appears completely still.",
+    "lines": [
+      {
+        "speaker": "Will",
+        "text": "Evelyn?"
+      },
+      {
+        "speaker": "Narrator",
+        "text": "One second for her was millions of years for him."
+      }
+    ]
+  },
+  {
+    "page": 28,
+    "chapter": "DAY EIGHT · THE DEATH OF GOD",
+    "title": "A Body to Return To",
+    "scene": "Nanomachines print a new body outside Evelyn's shelter as Will faces the beginning of a long wait.",
+    "lines": [
+      {
+        "speaker": "Will",
+        "text": "If my voice can't reach you, I'll come back in person."
+      },
+      {
+        "speaker": "Narrator",
+        "text": "The body needed a day. For him, billions of years."
+      }
+    ]
+  },
+  {
+    "page": 29,
+    "chapter": "DAY EIGHT · THE DEATH OF GOD",
+    "title": "Heat Death of Time",
+    "scene": "Will's repeated silhouettes erode in a blue void as his memory of Evelyn scatters like stardust.",
+    "lines": [
+      {
+        "speaker": "Will",
+        "text": "At ten thousand years, I remembered her voice."
+      },
+      {
+        "speaker": "Will",
+        "text": "At a hundred million... what do I remember now?"
+      }
+    ]
+  },
+  {
+    "page": 30,
+    "chapter": "DAY EIGHT · THE DEATH OF GOD",
+    "title": "Reunion",
+    "scene": "Evelyn embraces Will in a restored sunrise garden; he does not embrace her back.",
+    "lines": [
+      {
+        "speaker": "Evelyn",
+        "text": "Will! You came back!"
+      },
+      {
+        "speaker": "Narrator",
+        "text": "The world was saved. Will had reached her at last. But after an eternity alone, he had no answer left."
+      }
+    ]
+  }
 ]

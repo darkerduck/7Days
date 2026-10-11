@@ -44,6 +44,8 @@ for i in range(1, 31):
             x, y, width = bubble.get("x", -1), bubble.get("y", -1), bubble.get("w", -1)
             if not (0 <= x and 0 <= y <= 90 and width > 0 and x + width <= 99):
                 errors.append("%s page %02d has a bubble outside the artwork" % (language, i))
+            if not 1 <= bubble.get("panel", 0) <= layout.get("panel_count", 0):
+                errors.append("%s page %02d has a bubble assigned to a nonexistent panel" % (language, i))
         if (not PARTIAL or path.is_file()) and not layout.get("reviewed"):
             errors.append("%s page %02d dialogue placement has not been visually reviewed" % (language, i))
     if i <= min(len(PAGES["zh"]), len(PAGES["en"])) and len(PAGES["zh"][i - 1].get("lines", [])) != len(PAGES["en"][i - 1].get("lines", [])):
