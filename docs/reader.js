@@ -2,17 +2,19 @@ const total = 30;
 const $ = (id) => document.getElementById(id);
 const language = new URL(location.href).searchParams.get('lang') === 'en' ? 'en' : 'zh';
 const ui = {
-  zh: { brand: '成神七日', subtitle: 'SEVEN DAYS TO GODHOOD', skip: '跳至漫畫', navigation: '閱讀選項', languages: '語言', jump: '跳至', pageJump: '選擇頁碼', progress: '閱讀進度', dialogue: '畫格中的對話', original: '原尺寸（含字）', fit: '適應螢幕', pan: '左右滑動查看原尺寸畫面與對話。', raw: '無字原圖', transcript: '展開本頁文字稿', transcriptArea: '本頁文字稿', pager: '翻頁', previous: '上一頁', next: '下一頁', imageLoading: '正在載入第 {page} 頁…', imageMissing: '本頁畫面尚未完成，請稍後再閱讀。', loadFailed: '暫時無法載入漫畫', retry: '請稍後重試。', credit: '原作《成神七日》｜三十頁漫畫改編', help: '方向鍵可翻頁；可切換原尺寸含字版。' },
-  en: { brand: 'Seven Days to Godhood', subtitle: 'A COMIC IN THIRTY PAGES', skip: 'Skip to comic', navigation: 'Reading options', languages: 'Languages', jump: 'Go to', pageJump: 'Choose a page', progress: 'Reading progress', dialogue: 'Dialogue in the comic panels', original: 'Full size with dialogue', fit: 'Fit to screen', pan: 'Pan horizontally to read the full-size page and dialogue.', raw: 'Art without text', transcript: 'Open page transcript', transcriptArea: 'Page transcript', pager: 'Turn pages', previous: 'Previous', next: 'Next', imageLoading: 'Loading page {page}…', imageMissing: 'This page is still being illustrated.', loadFailed: 'Unable to load the comic', retry: 'Please try again later.', credit: 'Based on Seven Days to Godhood · 30-page comic adaptation', help: 'Use arrow keys to turn pages. Full-size view includes dialogue.' }
+  zh: { cover: '封面', coverLoading: '正在載入封面…', coverMissing: '暫時無法載入封面，請稍後重試。', coverAlt: '《成神七日》電影海報封面', coverOriginal: '原尺寸封面', coverRaw: '封面圖片', start: '開始閱讀', brand: '成神七日', subtitle: 'SEVEN DAYS TO GODHOOD', skip: '跳至漫畫', navigation: '閱讀選項', languages: '語言', jump: '跳至', pageJump: '選擇頁碼', progress: '閱讀進度', dialogue: '畫格中的對話', original: '原尺寸（含字）', fit: '適應螢幕', pan: '左右滑動查看原尺寸畫面與對話。', raw: '無字原圖', transcript: '展開本頁文字稿', transcriptArea: '本頁文字稿', pager: '翻頁', previous: '上一頁', next: '下一頁', imageLoading: '正在載入第 {page} 頁…', imageMissing: '本頁畫面尚未完成，請稍後再閱讀。', loadFailed: '暫時無法載入漫畫', retry: '請稍後重試。', credit: '原作《成神七日》｜三十頁漫畫改編', help: '方向鍵可翻頁；可切換原尺寸含字版。' },
+  en: { cover: 'Cover', coverLoading: 'Loading cover…', coverMissing: 'Unable to load the cover. Please try again later.', coverAlt: 'Seven Days to Godhood movie poster cover', coverOriginal: 'Full-size cover', coverRaw: 'Cover image', start: 'Start reading', brand: 'Seven Days to Godhood', subtitle: 'A COMIC IN THIRTY PAGES', skip: 'Skip to comic', navigation: 'Reading options', languages: 'Languages', jump: 'Go to', pageJump: 'Choose a page', progress: 'Reading progress', dialogue: 'Dialogue in the comic panels', original: 'Full size with dialogue', fit: 'Fit to screen', pan: 'Pan horizontally to read the full-size page and dialogue.', raw: 'Art without text', transcript: 'Open page transcript', transcriptArea: 'Page transcript', pager: 'Turn pages', previous: 'Previous', next: 'Next', imageLoading: 'Loading page {page}…', imageMissing: 'This page is still being illustrated.', loadFailed: 'Unable to load the comic', retry: 'Please try again later.', credit: 'Based on Seven Days to Godhood · 30-page comic adaptation', help: 'Use arrow keys to turn pages. Full-size view includes dialogue.' }
 }[language];
 let pages = [];
 let layouts = [];
-let current = 1;
+let current = 0;
 let imageRequest = 0;
 const prefetched = new Map();
 
 function pageImagePath(pageNumber) {
-  return `pages/${String(pageNumber).padStart(2, '0')}.png`;
+  return pageNumber === 0
+    ? (language === 'en' ? 'cover.en.png' : 'cover.png')
+    : `pages/${String(pageNumber).padStart(2, '0')}.png`;
 }
 
 function prefetchNext(pageNumber) {
@@ -26,25 +28,33 @@ function prefetchNext(pageNumber) {
 }
 
 function pageFromURL() {
-  const value = Number(new URL(location.href).searchParams.get('page'));
+  const param = new URL(location.href).searchParams.get('page');
+  if (param === null || param === 'cover') return 0;
+  const value = Number(param);
   return Number.isInteger(value) && value >= 1 && value <= total ? value : 1;
 }
 
 function render(pageNumber, moveFocus = false) {
-  current = Math.max(1, Math.min(total, pageNumber));
-  const page = pages[current - 1];
-  const layout = layouts[current - 1];
+  current = Math.max(0, Math.min(total, pageNumber));
+  const isCover = current === 0;
+  const page = isCover ? { chapter: ui.cover, title: ui.brand, lines: [] } : pages[current - 1];
+  const layout = isCover ? { balloons: [] } : layouts[current - 1];
   if (!page) return;
   $('chapter').textContent = page.chapter;
-  $('title').textContent = `${String(current).padStart(2, '0')} · ${page.title}`;
-  document.title = `${page.title}｜${ui.brand} ${current}/${total}`;
-  $('counter').textContent = `${current} / ${total}`;
-  $('bottom-counter').textContent = `${current} / ${total}`;
+  $('title').textContent = isCover ? page.title : `${String(current).padStart(2, '0')} · ${page.title}`;
+  document.title = isCover ? `${ui.brand}｜${ui.cover}` : `${page.title}｜${ui.brand} ${current}/${total}`;
+  $('counter').textContent = isCover ? ui.cover : `${current} / ${total}`;
+  $('bottom-counter').textContent = isCover ? ui.cover : `${current} / ${total}`;
   $('page-jump').value = String(current);
-  $('previous').disabled = current === 1;
+  $('previous').disabled = isCover;
+  $('next').querySelector('span').textContent = isCover ? ui.start : ui.next;
+  $('next').setAttribute('aria-label', isCover ? ui.start : ui.next);
+  document.querySelector('.transcript').hidden = isCover;
+  $('raw-image').textContent = isCover ? ui.coverRaw : ui.raw;
   $('next').disabled = current === total;
   const progress = document.querySelector('.progress');
   progress.setAttribute('aria-valuenow', String(current));
+  progress.setAttribute('aria-valuetext', isCover ? ui.cover : `${current} / ${total}`);
   $('progress-fill').style.width = `${(current / total) * 100}%`;
 
   const image = $('page-image');
@@ -55,10 +65,10 @@ function render(pageNumber, moveFocus = false) {
   frame.classList.remove('missing');
   frame.classList.add('loading');
   frame.setAttribute('aria-busy', 'true');
-  const loadingMessage = ui.imageLoading.replace('{page}', String(current));
+  const loadingMessage = isCover ? ui.coverLoading : ui.imageLoading.replace('{page}', String(current));
   frame.dataset.loadingMessage = loadingMessage;
   $('image-status').textContent = loadingMessage;
-  image.alt = language === 'en'
+  image.alt = isCover ? ui.coverAlt : language === 'en'
     ? `Page ${current}: ${page.title}. ${page.scene}`
     : `第 ${current} 頁：${page.title}。${page.scene}`;
   image.onload = () => {
@@ -74,22 +84,22 @@ function render(pageNumber, moveFocus = false) {
     frame.classList.remove('loading');
     frame.setAttribute('aria-busy', 'false');
     frame.classList.add('missing');
-    $('image-status').textContent = ui.imageMissing;
+    $('image-status').textContent = isCover ? ui.coverMissing : ui.imageMissing;
   };
   image.src = src;
   const sizeUrl = new URL(location.href);
-  sizeUrl.searchParams.set('page', String(current));
+  sizeUrl.searchParams.set('page', isCover ? 'cover' : String(current));
   const original = sizeUrl.searchParams.get('view') === 'original';
   document.body.classList.toggle('original-size', original);
   if (original) sizeUrl.searchParams.delete('view');
   else sizeUrl.searchParams.set('view', 'original');
   $('full-size').href = sizeUrl;
-  $('full-size').textContent = original ? ui.fit : ui.original;
+  $('full-size').textContent = original ? ui.fit : isCover ? ui.coverOriginal : ui.original;
   $('fit-top').href = sizeUrl;
   $('raw-image').href = src;
   for (const code of ['zh', 'en']) {
     const url = new URL(location.href);
-    url.searchParams.set('page', String(current));
+    url.searchParams.set('page', isCover ? 'cover' : String(current));
     url.searchParams.set('lang', code);
     const link = $(`lang-${code}`);
     link.href = url;
@@ -138,10 +148,10 @@ function render(pageNumber, moveFocus = false) {
 }
 
 function navigate(pageNumber) {
-  const next = Math.max(1, Math.min(total, pageNumber));
+  const next = Math.max(0, Math.min(total, pageNumber));
   if (next === current) return;
   const url = new URL(location.href);
-  url.searchParams.set('page', String(next));
+  url.searchParams.set('page', next === 0 ? 'cover' : String(next));
   history.pushState({ page: next }, '', url);
   render(next, true);
 }
@@ -180,6 +190,10 @@ async function initialize() {
     if (!Array.isArray(pages) || pages.length !== total || pages.some((p, i) => p.page !== i + 1)) throw new Error('storyboard incomplete');
     if (!Array.isArray(layouts) || layouts.length !== total || layouts.some((p, i) => p.page !== i + 1 || p.balloons.length !== pages[i].lines.length)) throw new Error('layout incomplete');
     const jump = $('page-jump');
+    const coverOption = document.createElement('option');
+    coverOption.value = '0';
+    coverOption.textContent = ui.cover;
+    jump.append(coverOption);
     for (const page of pages) {
       const option = document.createElement('option');
       option.value = String(page.page);
