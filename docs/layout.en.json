@@ -64,38 +64,38 @@
   },
   {
     "page": 4,
-    "panel_count": 2,
-    "reviewed": false,
+    "panel_count": 3,
+    "reviewed": true,
     "balloons": [
       {
         "panel": 1,
-        "x": 5,
-        "y": 3.0,
-        "w": 49
+        "x": 57,
+        "y": 3,
+        "w": 40
       },
       {
         "panel": 2,
-        "x": 55,
-        "y": 53.0,
-        "w": 42
+        "x": 52,
+        "y": 34,
+        "w": 45
       }
     ]
   },
   {
     "page": 5,
     "panel_count": 3,
-    "reviewed": false,
+    "reviewed": true,
     "balloons": [
       {
         "panel": 1,
         "x": 5,
-        "y": 3.0,
+        "y": 3,
         "w": 49
       },
       {
         "panel": 3,
         "x": 55,
-        "y": 69.7,
+        "y": 69,
         "w": 42
       }
     ]
@@ -229,33 +229,33 @@
   },
   {
     "page": 13,
-    "panel_count": 2,
-    "reviewed": false,
+    "panel_count": 1,
+    "reviewed": true,
     "balloons": [
       {
         "panel": 1,
         "x": 5,
-        "y": 3.0,
+        "y": 3,
         "w": 49
       }
     ]
   },
   {
     "page": 14,
-    "panel_count": 3,
-    "reviewed": false,
+    "panel_count": 4,
+    "reviewed": true,
     "balloons": [
       {
         "panel": 1,
-        "x": 5,
-        "y": 3.0,
-        "w": 49
+        "x": 52,
+        "y": 3,
+        "w": 45
       },
       {
-        "panel": 3,
-        "x": 55,
-        "y": 69.7,
-        "w": 42
+        "panel": 2,
+        "x": 50,
+        "y": 31,
+        "w": 45
       }
     ]
   },
@@ -383,32 +383,32 @@
   {
     "page": 22,
     "panel_count": 3,
-    "reviewed": false,
+    "reviewed": true,
     "balloons": [
       {
         "panel": 1,
-        "x": 5,
-        "y": 3.0,
-        "w": 49
+        "x": 53,
+        "y": 3,
+        "w": 43
       },
       {
         "panel": 3,
         "x": 55,
-        "y": 69.7,
+        "y": 69,
         "w": 42
       }
     ]
   },
   {
     "page": 23,
-    "panel_count": 2,
-    "reviewed": false,
+    "panel_count": 3,
+    "reviewed": true,
     "balloons": [
       {
-        "panel": 1,
-        "x": 5,
-        "y": 3.0,
-        "w": 49
+        "panel": 3,
+        "x": 53,
+        "y": 69,
+        "w": 44
       }
     ]
   },

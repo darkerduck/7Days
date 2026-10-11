@@ -64,38 +64,38 @@
   },
   {
     "page": 4,
-    "panel_count": 2,
-    "reviewed": false,
+    "panel_count": 3,
+    "reviewed": true,
     "balloons": [
       {
         "panel": 1,
-        "x": 5,
-        "y": 3.0,
-        "w": 41
+        "x": 60,
+        "y": 3,
+        "w": 35
       },
       {
         "panel": 2,
         "x": 55,
-        "y": 53.0,
-        "w": 41
+        "y": 34,
+        "w": 40
       }
     ]
   },
   {
     "page": 5,
     "panel_count": 3,
-    "reviewed": false,
+    "reviewed": true,
     "balloons": [
       {
         "panel": 1,
         "x": 5,
-        "y": 3.0,
+        "y": 3,
         "w": 41
       },
       {
         "panel": 3,
         "x": 55,
-        "y": 69.7,
+        "y": 69,
         "w": 41
       }
     ]
@@ -229,33 +229,33 @@
   },
   {
     "page": 13,
-    "panel_count": 2,
-    "reviewed": false,
+    "panel_count": 1,
+    "reviewed": true,
     "balloons": [
       {
         "panel": 1,
         "x": 5,
-        "y": 3.0,
+        "y": 3,
         "w": 53
       }
     ]
   },
   {
     "page": 14,
-    "panel_count": 3,
-    "reviewed": false,
+    "panel_count": 4,
+    "reviewed": true,
     "balloons": [
       {
         "panel": 1,
-        "x": 5,
-        "y": 3.0,
-        "w": 41
+        "x": 55,
+        "y": 3,
+        "w": 40
       },
       {
-        "panel": 3,
-        "x": 55,
-        "y": 69.7,
-        "w": 41
+        "panel": 2,
+        "x": 53,
+        "y": 31,
+        "w": 42
       }
     ]
   },
@@ -383,32 +383,32 @@
   {
     "page": 22,
     "panel_count": 3,
-    "reviewed": false,
+    "reviewed": true,
     "balloons": [
       {
         "panel": 1,
-        "x": 5,
-        "y": 3.0,
-        "w": 41
+        "x": 55,
+        "y": 3,
+        "w": 40
       },
       {
         "panel": 3,
         "x": 55,
-        "y": 69.7,
-        "w": 41
+        "y": 69,
+        "w": 40
       }
     ]
   },
   {
     "page": 23,
-    "panel_count": 2,
-    "reviewed": false,
+    "panel_count": 3,
+    "reviewed": true,
     "balloons": [
       {
-        "panel": 1,
-        "x": 5,
-        "y": 3.0,
-        "w": 53
+        "panel": 3,
+        "x": 56,
+        "y": 69,
+        "w": 40
       }
     ]
   },
