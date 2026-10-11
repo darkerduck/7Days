@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#080e19">
+  <meta name="description" content="《成神七日》三十頁漫畫閱讀版。">
+  <title>成神七日｜三十頁漫畫</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="reader.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#comic">跳至漫畫</a>
+  <header class="site-header">
+    <div class="brand"><span class="brand-mark" aria-hidden="true">◈</span><span>成神七日<small>SEVEN DAYS TO GODHOOD</small></span></div>
+    <nav class="top-nav" aria-label="閱讀選項">
+      <label for="page-jump">跳至</label>
+      <select id="page-jump" aria-label="選擇頁碼"></select>
+      <span class="page-counter" id="counter">— / 30</span>
+    </nav>
+  </header>
+  <main id="comic" tabindex="-1">
+    <div class="progress" role="progressbar" aria-label="閱讀進度" aria-valuemin="1" aria-valuemax="30" aria-valuenow="1"><span id="progress-fill"></span></div>
+    <div class="page-meta"><p class="chapter" id="chapter"></p><h1 id="title">載入中</h1></div>
+    <figure class="artwork">
+      <a id="full-size" href="#" target="_blank" rel="noopener" aria-label="以原尺寸開啟本頁漫畫"><img id="page-image" alt="" decoding="async"></a>
+      <figcaption id="image-status" role="status"></figcaption>
+    </figure>
+    <section class="script" aria-label="本頁對話" id="script"></section>
+    <nav class="pager" aria-label="翻頁">
+      <button type="button" id="previous" aria-label="上一頁">← <span>上一頁</span></button>
+      <span id="bottom-counter">— / 30</span>
+      <button type="button" id="next" aria-label="下一頁"><span>下一頁</span> →</button>
+    </nav>
+  </main>
+  <footer><p>原作《成神七日》｜三十頁漫畫改編</p><p>方向鍵可翻頁；點擊畫面可檢視原尺寸。</p></footer>
+</body>
+</html>
